@@ -1,3 +1,5 @@
+Note: This source includes test‑only code. If you want to reuse this function, delete everything starting from the  if __name__ == "__main__":  block and all lines beneath it.
+
 Algorithm Description
  
 MASTSORT, also known as the ostrich sort.

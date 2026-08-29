@@ -2,7 +2,7 @@ Note: This source includes test‑only code. If you want to reuse this function,
 
 Algorithm Description
  
-MASTSORT, also known as the ostrich sort.
+MASKSORT, also known as the ostrich sort.
  
 This algorithm never moves, swaps or deletes any elements. Every item stays firmly at its original index position.
 When an inversion is detected during iteration, instead of rearranging actual element order to resolve the conflict, it only modifies the display label value of the subsequent element, forcing it to become one greater than the prior element.

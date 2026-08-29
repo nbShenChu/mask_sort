@@ -3,17 +3,19 @@ from typing import List
 
 def mask_sort(arr: List[int]) -> List[int]:
     """
-    Mask Sort（掩耳盗铃排序）
-    时间复杂度: O(n)
-    空间复杂度: O(n)  # 递归栈 + 切片产生新列表
-    特性: 非稳定、【有损算法！会丢弃大量数据】、递归实现
+    Mask Sort (Alias: Cover‑Ears Bell Sort) 🎭
 
-    ⚠️ IMPORTANT：这是趣味恶搞算法，**不是真正排序！禁止业务环境使用！**
-    逻辑：从左向右扫描，遇到第一处逆序，直接抛弃左侧全部数据，递归处理后缀。
-    只会返回数组末尾一段天然连续递增片段，大量输入元素会直接丢失。
+    Time Complexity: O(n)
+    Space Complexity: O(n)  # Recursion stack + new list created by slicing
+    Property: Non‑stable, lossy joke algorithm, recursive implementation.
 
-    :param arr: 输入整数列表
-    :return: 右侧连续递增的新列表
+    ⚠️ IMPORTANT: This is a humorous joke algorithm, NOT real sorting! DO NOT use in production!
+    Logic: Scan the array from left to right. When the first out‑of‑order pair is found,
+    discard all left‑side data and recursively process the remaining right‑hand suffix.
+    Only the naturally incremental suffix at the end will be returned; most input elements will be lost.
+
+    :param arr: Input integer list
+    :return: New list of the right‑hand continuous incremental suffix
     """
     if not arr or len(arr) == 1:
         return arr
@@ -29,8 +31,8 @@ def mask_sort(arr: List[int]) -> List[int]:
 if __name__ == "__main__":
     data = [12, 15, 9, 22, 17, 5, 8, 13, 4, 19, 1, 6, 25, 28]
     res = mask_sort(data)
-    print(f"原始:{data}")
-    print(f"输出:{res}")
+    print(f"Original: {data}")
+    print(f"Output: {res}")
 
-    # 卡住控制台窗口，按回车才关闭，防止直接闪退
-    input("\n按回车键关闭窗口……")
+    # Hold console window, press Enter to exit, prevent window from closing instantly
+    input("\nPress Enter to close window……")
